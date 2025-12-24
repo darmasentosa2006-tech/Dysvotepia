@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://2i83pegrxpe0"]
+
+[ext_resource type="Texture2D" uid="uid://cpo7g4kfq8xrx" path="res://Assets/Start menu/Background.png" id="1_mldo8"]
+[ext_resource type="Script" uid="uid://braoxay14muu4" path="res://Kode/ending_1.gd" id="1_vyq0m"]
+[ext_resource type="Texture2D" uid="uid://slakjjf1fvn4" path="res://Assets/Ending/Good/Ending1.png" id="2_vyq0m"]
+
+[node name="Ending1" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vyq0m")
+
+[node name="BG" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_mldo8")
+
+[node name="End1" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 76.0
+offset_right = 1714.0
+offset_bottom = 877.0
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_vyq0m")

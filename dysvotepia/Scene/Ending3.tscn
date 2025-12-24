@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://x6hed8l074dr"]
+
+[ext_resource type="Texture2D" uid="uid://cysqsvfq3akck" path="res://Assets/Ending/Bad/Background.png" id="1_gstpq"]
+[ext_resource type="Script" uid="uid://braoxay14muu4" path="res://Kode/ending_1.gd" id="1_uvsem"]
+[ext_resource type="Texture2D" uid="uid://b0ow7ja8xrfm0" path="res://Assets/Ending/Bad/Ending2.png" id="2_uvsem"]
+
+[node name="Ending3" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_uvsem")
+
+[node name="bg" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_gstpq")
+
+[node name="end3" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 76.0
+offset_right = 1714.0
+offset_bottom = 877.0
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_uvsem")

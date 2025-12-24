@@ -1,0 +1,173 @@
+[gd_scene load_steps=19 format=3 uid="uid://dv1wti6k3jea8"]
+
+[ext_resource type="Texture2D" uid="uid://cysqsvfq3akck" path="res://Assets/Ending/Bad/Background.png" id="1_xux4k"]
+[ext_resource type="Script" uid="uid://bee7kqsc337h3" path="res://Kode/digital.gd" id="1_ymf3l"]
+[ext_resource type="Texture2D" uid="uid://bd8o3q6hloja1" path="res://Assets/Gamemode/Digital/Component 3.png" id="3_ymf3l"]
+[ext_resource type="Texture2D" uid="uid://b7sneqdeleqct" path="res://Assets/Gamemode/Digital/Component 4 (1).png" id="4_qdn5q"]
+[ext_resource type="Texture2D" uid="uid://3lo3s5b4h2tp" path="res://Assets/Gamemode/Physical/Bg i.png" id="5_vjchc"]
+[ext_resource type="Texture2D" uid="uid://bfr0uvbkqcau8" path="res://Assets/Gamemode/Physical/START__.png" id="6_l7qgn"]
+[ext_resource type="Texture2D" uid="uid://bc8h8ansmpwdc" path="res://Assets/animasi/START__ (1).png" id="7_l7qgn"]
+[ext_resource type="Texture2D" uid="uid://cnbyx763f2lnk" path="res://Assets/Gamemode/Digital/Component 5.png" id="7_ymf3l"]
+[ext_resource type="Texture2D" uid="uid://buasl7qtthx27" path="res://Assets/Gamemode/Physical/Gamemode _ Switch.png" id="8_ck3fb"]
+[ext_resource type="Texture2D" uid="uid://di4jkgxjxqkn1" path="res://Assets/animasi/START__.png" id="8_yqfoy"]
+[ext_resource type="Texture2D" uid="uid://h1k0g1olxcl3" path="res://Assets/Gamemode/Digital/bjir.png" id="9_vjchc"]
+[ext_resource type="Texture2D" uid="uid://dt2pju83v5250" path="res://Assets/animasi/Component 5 (1).png" id="10_ck3fb"]
+[ext_resource type="Texture2D" uid="uid://dcwpdqv1vvsec" path="res://Assets/Gamemode/Physical/_.png" id="10_mwk2l"]
+[ext_resource type="Texture2D" uid="uid://g4idcjcwehxi" path="res://Assets/animasi/Component 5.png" id="11_65y1u"]
+[ext_resource type="FontFile" uid="uid://chp1oa2oeb38x" path="res://Assets/font/government-agent-bb.regular.ttf" id="11_th0eg"]
+[ext_resource type="Texture2D" uid="uid://b6i0obd3li2hc" path="res://Assets/Gamemode/Physical/Line 1.png" id="12_mcm2s"]
+[ext_resource type="Texture2D" uid="uid://bb1u52ppdosh0" path="res://Assets/Gamemode/Physical/Line 2.png" id="13_oxolr"]
+[ext_resource type="FontFile" uid="uid://w8ldyic1ffai" path="res://Assets/font/Consolas Regular.ttf" id="14_pi1vt"]
+
+[node name="Digital" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ymf3l")
+
+[node name="BG" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_xux4k")
+
+[node name="Komp atas" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 47.0
+offset_right = 1967.0
+offset_bottom = 636.0
+scale = Vector2(0.55, 0.55)
+texture = ExtResource("3_ymf3l")
+
+[node name="ireng" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 402.0
+offset_right = 1363.0
+offset_bottom = 476.0
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_qdn5q")
+
+[node name="bgI" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 879.0
+offset_top = 402.0
+offset_right = 950.0
+offset_bottom = 473.0
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("5_vjchc")
+
+[node name="StartButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 625.0
+offset_top = 502.0
+offset_right = 1516.0
+offset_bottom = 670.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("6_l7qgn")
+texture_pressed = ExtResource("7_l7qgn")
+texture_hover = ExtResource("8_yqfoy")
+
+[node name="SwitchButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 501.0
+offset_right = 730.0
+offset_bottom = 700.0
+scale = Vector2(0.55, 0.55)
+texture_normal = ExtResource("7_ymf3l")
+texture_pressed = ExtResource("10_ck3fb")
+texture_hover = ExtResource("11_65y1u")
+
+[node name="gamemodeswitch" type="TextureRect" parent="SwitchButton"]
+layout_mode = 0
+offset_left = 85.4545
+offset_top = 132.727
+offset_right = 437.455
+offset_bottom = 172.727
+texture = ExtResource("8_ck3fb")
+
+[node name="TextureRect" type="TextureRect" parent="SwitchButton"]
+layout_mode = 0
+offset_left = 101.818
+offset_top = 34.5455
+offset_right = 593.818
+offset_bottom = 100.546
+texture = ExtResource("9_vjchc")
+
+[node name="BackButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 893.0
+offset_top = 414.0
+offset_right = 913.0
+offset_bottom = 438.0
+scale = Vector2(0.8, 0.8)
+texture_normal = ExtResource("10_mwk2l")
+
+[node name="MartaText" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1161.0
+offset_top = 14.0
+offset_right = 2201.0
+offset_bottom = 45.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_th0eg")
+theme_override_font_sizes/font_size = 30
+text = "Digital        Mode       Sedang        Dalam        Progress        Pembuatan        harap        sabar"
+
+[node name="MartaText2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 2349.0
+offset_top = 14.0
+offset_right = 3421.0
+offset_bottom = 45.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_th0eg")
+theme_override_font_sizes/font_size = 30
+text = "Digital        Mode       Sedang        Dalam        Progress        Pembuatan        harap        sabar"
+
+[node name="line1" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 744.0
+offset_top = 464.0
+offset_right = 1451.0
+offset_bottom = 522.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_mcm2s")
+
+[node name="line2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 577.0
+offset_top = 599.0
+offset_right = 1284.0
+offset_bottom = 657.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("13_oxolr")
+
+[node name="Bginfo" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 949.0
+offset_top = 402.0
+offset_right = 1020.0
+offset_bottom = 473.0
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("5_vjchc")
+
+[node name="Info" type="Label" parent="."]
+layout_mode = 0
+offset_left = 963.5
+offset_top = 413.0
+offset_right = 977.5
+offset_bottom = 439.0
+theme_override_fonts/font = ExtResource("14_pi1vt")
+theme_override_font_sizes/font_size = 25
+text = "i"
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="SwitchButton" to="." method="_on_switch_button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

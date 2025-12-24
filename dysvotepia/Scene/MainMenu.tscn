@@ -1,0 +1,132 @@
+[gd_scene load_steps=16 format=3 uid="uid://qqmligbyoa16"]
+
+[ext_resource type="Script" uid="uid://bks2ad6l6q5us" path="res://Kode/main_menu.gd" id="1_qf8tx"]
+[ext_resource type="Texture2D" uid="uid://2bpehs2urft2" path="res://Assets/Main menu/Background.png" id="2_v5kgo"]
+[ext_resource type="Texture2D" uid="uid://dk6b36djey5nu" path="res://Assets/Main menu/18 tahun 3 bulan 0 minggu 4 hari lagi.png" id="3_vbdn0"]
+[ext_resource type="Texture2D" uid="uid://dsgtxuqpmsoa0" path="res://Assets/Main menu/2025.png" id="4_x2pvq"]
+[ext_resource type="Texture2D" uid="uid://wqwi0o6ifmye" path="res://Assets/Main menu/pia.png" id="8_lbm0s"]
+[ext_resource type="FontFile" uid="uid://w8ldyic1ffai" path="res://Assets/font/Consolas Regular.ttf" id="8_vbdn0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x2pvq"]
+bg_color = Color(0.448067, 0.448067, 0.448067, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_du3yi"]
+bg_color = Color(0.262932, 0.262932, 0.262932, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_55g6a"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qf8tx"]
+bg_color = Color(0.447059, 0.447059, 0.447059, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v5kgo"]
+bg_color = Color(0.262745, 0.262745, 0.262745, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vbdn0"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v3p41"]
+bg_color = Color(0.447059, 0.447059, 0.447059, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6nqpc"]
+bg_color = Color(0.262745, 0.262745, 0.262745, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p3x8m"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qf8tx")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_v5kgo")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_top = 32.0
+offset_right = 214.0
+offset_bottom = 105.0
+
+[node name="Tanggal" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 238.0
+offset_top = 322.0
+offset_right = 1314.0
+offset_bottom = 384.0
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_vbdn0")
+
+[node name="TitleTanggal" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 177.0
+offset_top = 182.0
+offset_right = 1474.0
+offset_bottom = 354.0
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_x2pvq")
+
+[node name="pia" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 434.0
+offset_top = 574.0
+offset_right = 815.0
+offset_bottom = 616.0
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("8_lbm0s")
+
+[node name="NewGameButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = 238.0
+offset_top = 388.0
+offset_right = 478.0
+offset_bottom = 459.0
+scale = Vector2(0.7, 0.7)
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("8_vbdn0")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/hover = SubResource("StyleBoxFlat_x2pvq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_du3yi")
+theme_override_styles/normal = SubResource("StyleBoxFlat_55g6a")
+text = "New_game"
+
+[node name="SettingsButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = 486.0
+offset_top = 388.0
+offset_right = 723.0
+offset_bottom = 459.0
+scale = Vector2(0.7, 0.7)
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("8_vbdn0")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/hover = SubResource("StyleBoxFlat_qf8tx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_v5kgo")
+theme_override_styles/normal = SubResource("StyleBoxFlat_vbdn0")
+text = "Settings"
+
+[node name="ExitButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = 743.0
+offset_top = 388.0
+offset_right = 887.0
+offset_bottom = 459.0
+scale = Vector2(0.7, 0.7)
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("8_vbdn0")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/hover = SubResource("StyleBoxFlat_v3p41")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_6nqpc")
+theme_override_styles/normal = SubResource("StyleBoxFlat_p3x8m")
+text = "Exit"

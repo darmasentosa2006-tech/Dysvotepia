@@ -1,0 +1,319 @@
+[gd_scene load_steps=22 format=3 uid="uid://dgv7r1cjnka5g"]
+
+[ext_resource type="Script" uid="uid://542nxp0beyt0" path="res://Kode/voting.gd" id="1_jh5bo"]
+[ext_resource type="Texture2D" uid="uid://dnb262rw87elx" path="res://Assets/Gameplay/Physical/Background.png" id="2_6pia4"]
+[ext_resource type="Texture2D" uid="uid://1q8syajy6wrg" path="res://Assets/Gameplay/Physical/Title pemilihan.png" id="3_7p66d"]
+[ext_resource type="Texture2D" uid="uid://c61bcne5sb7mj" path="res://Assets/Gameplay/Physical/Komponen paslon 1.png" id="4_twevr"]
+[ext_resource type="Texture2D" uid="uid://dodrl3j1ki7gq" path="res://Assets/Gameplay/Physical/Komponen paslon 2.png" id="5_dme34"]
+[ext_resource type="Texture2D" uid="uid://c82i2oqeqblt2" path="res://Assets/Gameplay/Physical/Bg tombol kiri.png" id="6_q2lo5"]
+[ext_resource type="FontFile" uid="uid://chp1oa2oeb38x" path="res://Assets/font/government-agent-bb.regular.ttf" id="7_01wvs"]
+[ext_resource type="Texture2D" uid="uid://bphugopd7wymr" path="res://Assets/Gameplay/Physical/V (tanda tercoblos).png" id="8_i1crt"]
+[ext_resource type="FontFile" uid="uid://w8ldyic1ffai" path="res://Assets/font/Consolas Regular.ttf" id="9_5lowv"]
+[ext_resource type="Texture2D" uid="uid://dxtuq74qfmt5o" path="res://Assets/Gameplay/Physical/MANA YANG DIPILIH_.png" id="10_ejee5"]
+[ext_resource type="Texture2D" uid="uid://cpwqucu760r6w" path="res://Assets/Gameplay/Physical/NOMOR SUARA.png" id="11_aah2b"]
+[ext_resource type="Texture2D" uid="uid://dl1c4tso827u3" path="res://Assets/Gameplay/Physical/Bg tombol back.png" id="12_ltvlu"]
+[ext_resource type="Texture2D" uid="uid://d2ncfg8m32u7b" path="res://Assets/Gameplay/Physical/1.png" id="13_ilw7a"]
+[ext_resource type="Texture2D" uid="uid://cjxpwk0xy6eov" path="res://Assets/Gameplay/Physical/2.png" id="14_atph0"]
+[ext_resource type="Texture2D" uid="uid://dmvcpw7at560u" path="res://Assets/Gameplay/Physical/tombol back.png" id="15_8whxc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xvybp"]
+bg_color = Color(0.376658, 0.376658, 0.376658, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wyh8a"]
+bg_color = Color(0.699653, 0.699654, 0.699653, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2u4l3"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ueuxm"]
+bg_color = Color(0.376471, 0.376471, 0.376471, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sr01y"]
+bg_color = Color(0.698039, 0.698039, 0.698039, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_blo2q"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Node" type="Node"]
+script = ExtResource("1_jh5bo")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Background" type="TextureRect" parent="UI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1880.0
+offset_bottom = 1040.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.59956, 0.599411)
+texture = ExtResource("2_6pia4")
+
+[node name="Title" type="TextureRect" parent="UI"]
+layout_mode = 0
+offset_left = 274.0
+offset_top = 41.0
+offset_right = 1440.0
+offset_bottom = 105.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_7p66d")
+
+[node name="Paslon1" type="TextureRect" parent="UI"]
+layout_mode = 0
+offset_left = 101.0
+offset_top = 103.0
+offset_right = 704.0
+offset_bottom = 687.0
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_twevr")
+
+[node name="Paslon2" type="TextureRect" parent="UI"]
+layout_mode = 0
+offset_left = 668.0
+offset_top = 103.0
+offset_right = 1271.0
+offset_bottom = 687.0
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("5_dme34")
+
+[node name="BackgroundV" type="TextureRect" parent="UI"]
+layout_mode = 0
+offset_left = 161.0
+offset_top = 464.0
+offset_right = 311.0
+offset_bottom = 614.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_q2lo5")
+
+[node name="BackgroundV2" type="TextureRect" parent="UI"]
+layout_mode = 0
+offset_left = 898.0
+offset_top = 470.0
+offset_right = 1048.0
+offset_bottom = 620.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_q2lo5")
+
+[node name="Paslon1Btn" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = 484.0
+offset_top = 459.0
+offset_right = 792.0
+offset_bottom = 515.0
+scale = Vector2(0.5, 0.5)
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("7_01wvs")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/hover = SubResource("StyleBoxFlat_xvybp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wyh8a")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2u4l3")
+action_mode = 0
+text = "Paslon 1"
+
+[node name="Paslon2Btn" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = 484.0
+offset_top = 509.0
+offset_right = 792.0
+offset_bottom = 565.0
+scale = Vector2(0.5, 0.5)
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("7_01wvs")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/hover = SubResource("StyleBoxFlat_ueuxm")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sr01y")
+theme_override_styles/normal = SubResource("StyleBoxFlat_blo2q")
+action_mode = 0
+text = "Paslon 2"
+
+[node name="Check1" type="TextureRect" parent="UI"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 176.0
+offset_top = 473.0
+offset_right = 223.0
+offset_bottom = 527.0
+texture = ExtResource("8_i1crt")
+
+[node name="Check2" type="TextureRect" parent="UI"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 913.0
+offset_top = 480.0
+offset_right = 960.0
+offset_bottom = 534.0
+texture = ExtResource("8_i1crt")
+
+[node name="CounterLabel" type="Label" parent="UI"]
+texture_filter = 1
+texture_repeat = 2
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 0
+offset_left = 547.0
+offset_top = 207.0
+offset_right = 587.0
+offset_bottom = 278.0
+scale = Vector2(1, 0.922)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("7_01wvs")
+theme_override_font_sizes/font_size = 150
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="JujurLabel" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 343.0
+offset_top = 581.0
+offset_right = 497.0
+offset_bottom = 616.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_5lowv")
+theme_override_font_sizes/font_size = 20
+text = "Suara jujur: 0"
+
+[node name="ManipulasiLabel" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 570.0
+offset_top = 581.0
+offset_right = 856.0
+offset_bottom = 609.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_5lowv")
+theme_override_font_sizes/font_size = 20
+text = "Suara yang dimanipulasi: 0"
+
+[node name="Manayangdipilih" type="TextureRect" parent="UI"]
+layout_mode = 0
+offset_left = 470.0
+offset_top = 363.0
+offset_right = 778.0
+offset_bottom = 464.0
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("10_ejee5")
+
+[node name="NomorSuara" type="TextureRect" parent="UI"]
+layout_mode = 0
+offset_left = 500.0
+offset_top = 114.0
+offset_right = 691.0
+offset_bottom = 215.0
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("11_aah2b")
+
+[node name="Pause" type="TextureRect" parent="UI"]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 40.0
+offset_right = 105.0
+offset_bottom = 100.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_ltvlu")
+
+[node name="1" type="TextureRect" parent="UI"]
+layout_mode = 0
+offset_left = 360.0
+offset_top = 430.0
+offset_right = 412.0
+offset_bottom = 598.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("13_ilw7a")
+
+[node name="2" type="TextureRect" parent="UI"]
+layout_mode = 0
+offset_left = 718.0
+offset_top = 430.0
+offset_right = 849.0
+offset_bottom = 598.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("14_atph0")
+
+[node name="paslon1" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 157.0
+offset_top = 417.0
+offset_right = 232.0
+offset_bottom = 434.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_5lowv")
+theme_override_font_sizes/font_size = 20
+text = "Vramroro"
+
+[node name="paslon4" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 712.0
+offset_top = 366.0
+offset_right = 800.0
+offset_bottom = 387.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_5lowv")
+theme_override_font_sizes/font_size = 20
+text = "Joesoef"
+
+[node name="paslon3" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 881.0
+offset_top = 427.0
+offset_right = 991.0
+offset_bottom = 448.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_5lowv")
+theme_override_font_sizes/font_size = 20
+text = "Joke O Wee"
+
+[node name="paslon2" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 323.0
+offset_top = 364.0
+offset_right = 411.0
+offset_bottom = 385.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_5lowv")
+theme_override_font_sizes/font_size = 20
+text = "Giovran"
+
+[node name="PauseButton" type="Button" parent="."]
+offset_left = 47.0
+offset_top = 39.0
+offset_right = 72.0
+offset_bottom = 70.0
+focus_mode = 0
+icon = ExtResource("15_8whxc")
+flat = true
+
+[node name="PauseMenu" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="PauseMenu"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 533.0
+offset_top = 582.0
+offset_right = 543.0
+offset_bottom = 600.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_5lowv")
+theme_override_font_sizes/font_size = 17
+text = "|"
+
+[connection signal="pressed" from="UI/Paslon1Btn" to="." method="_on_paslon_1_btn_pressed"]
+[connection signal="pressed" from="UI/Paslon2Btn" to="." method="_on_paslon_2_btn_pressed"]
+[connection signal="pressed" from="PauseButton" to="." method="_on_pause_button_pressed"]
