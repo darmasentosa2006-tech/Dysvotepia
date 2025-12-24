@@ -1,0 +1,20 @@
+# Godot engine
+.godot/
+.import/
+.export/
+.mono/
+
+# Godot build/export
+*.tmp
+*.log
+
+# Mono / C#
+bin/
+obj/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor backups
+*~
