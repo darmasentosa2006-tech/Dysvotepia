@@ -1,15 +1,16 @@
 extends Node
 
+@onready var player = $AudioStreamPlayer
+
 func _ready():
-	if not $AudioStreamPlayer.playing:
-		$AudioStreamPlayer.play()
+	pass
 
 func play():
-	if not $AudioStreamPlayer.playing:
-		$AudioStreamPlayer.play()
+	if not player.playing:
+		player.play()
 		
 func stop():
-	$AudioStreamPlayer.stop()
+	player.stop()
 	
 func set_volume(_value: float):
 	# 0 : normal, -10 : lebih pelan

@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://cnskk23p1yp8k"]
+
+[ext_resource type="Script" path="res://Kode/logo.gd" id="1_j0wcu"]
+[ext_resource type="Texture2D" uid="uid://vn0ax7be2lc0" path="res://Assets/Logo/hytam.png" id="2_u38hr"]
+[ext_resource type="Texture2D" uid="uid://b7wjhtioax3rm" path="res://Assets/Logo/IMG-20251224-WA0009.jpg" id="3_wrvx6"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_j0wcu")
+
+[node name="background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_top = -2.0
+offset_right = 40.0
+offset_bottom = 38.0
+texture = ExtResource("2_u38hr")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 386.0
+offset_top = 104.0
+offset_right = 1666.0
+offset_bottom = 1384.0
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_wrvx6")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 504.0
+offset_right = 711.0
+offset_bottom = 546.0
+theme_override_font_sizes/font_size = 30
+text = "Getmerald Studio"

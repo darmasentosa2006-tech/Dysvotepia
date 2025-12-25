@@ -5,6 +5,7 @@ func _ready():
 	$NewGameButton.pressed.connect(_on_new_game_pressed)
 	$SettingsButton.pressed.connect(_on_settings_pressed)
 	$ExitButton.pressed.connect(_on_exit_pressed)
+	BGM.play()
 	
 func _on_new_game_pressed():
 	get_tree().change_scene_to_file("res://Scene/physical.tscn")
