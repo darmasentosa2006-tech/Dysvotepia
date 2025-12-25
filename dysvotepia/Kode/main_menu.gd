@@ -11,7 +11,7 @@ func _on_new_game_pressed():
 	get_tree().change_scene_to_file("res://Scene/physical.tscn")
 	
 func _on_settings_pressed():
-	get_tree().change_scene_to_file("res://Scene/voting.tscn")
+	get_tree().change_scene_to_file("res://Scene/setting.tscn")
 	
 func _on_exit_pressed():
 	get_tree().quit()

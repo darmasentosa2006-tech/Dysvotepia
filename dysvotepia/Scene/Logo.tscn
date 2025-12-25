@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cnskk23p1yp8k"]
 
-[ext_resource type="Script" path="res://Kode/logo.gd" id="1_j0wcu"]
+[ext_resource type="Script" uid="uid://bevrlbevbiop0" path="res://Kode/logo.gd" id="1_j0wcu"]
 [ext_resource type="Texture2D" uid="uid://vn0ax7be2lc0" path="res://Assets/Logo/hytam.png" id="2_u38hr"]
 [ext_resource type="Texture2D" uid="uid://b7wjhtioax3rm" path="res://Assets/Logo/IMG-20251224-WA0009.jpg" id="3_wrvx6"]
 
